@@ -15,7 +15,9 @@ class GlobalIdentity:
         secret_key = client_secret_key
         if encrypt:
             secret_key = hmac.new(
-                client_secret_key, resources, hashlib.sha512).hexdigest()
+                str(client_secret_key),
+                str(resources),
+                hashlib.sha512).hexdigest()
 
         request = {
             'ApplicationKey': self.app_key,
