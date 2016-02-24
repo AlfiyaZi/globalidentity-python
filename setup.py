@@ -1,9 +1,8 @@
 import setuptools
-from global_identity.version import Version
 
 
 setuptools.setup(name='global_identity',
-                 version=Version('1.0.0').number,
+                 version='1.1.0',
                  description='Global Identity Authentication PIP',
                  long_description=open('README.md').read().strip(),
                  author='mralves',
